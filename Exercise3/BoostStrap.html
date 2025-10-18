@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Example</title>
+
+    <style>
+        .container {
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            padding: 80px;
+            min-height: 80vh;
+            background-color: #ff9102;
+        }
+        header, footer {
+            background-color: #ffffff;
+            border: 2px solid #ff9102;
+            padding: 10px;
+            text-align: left;
+        }
+        .middle-section {
+            display: flex;
+            flex: 1;
+        }
+        .sidebar-left, .sidebar-right {
+            background-color: #ffffff;
+            border: 2px solid #ff9102;
+            width: 150px;
+            padding: 10px;
+        }
+        .main-content {
+            flex: 2;
+            padding: 20px;
+            border: 2px solid #ff9102;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            Header
+        </header>
+
+        <div class="middle-section">
+            <aside class="sidebar-left">
+                Side Bar Left
+            </aside>
+
+            <main class="main-content">
+                Main Content
+            </main>
+
+            <aside class="sidebar-right">
+                Side Bar Right
+            </aside>
+        </div>
+
+        <footer>
+            Footer
+        </footer>
+    </div>
+</body>
+</html>

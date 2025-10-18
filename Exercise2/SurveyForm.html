@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+
+    <form action="" method="get">
+        
+        <img src="LogoIU.png" alt="University Logo" width="100">
+
+        <h2>Survey</h2>
+        <p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+
+        <h3>Your information:</h3>
+        <table class="info-table">
+            <tr>
+                <td><label for="fname">First Name</label></td>
+                <td><input type="text" id="fname" name="first_name"></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Last Name</label></td>
+                <td><input type="text" id="lname" name="last_name"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth</label></td>
+                <td><input type="text" id="dob" name="dob"></td>
+            </tr>
+        </table>
+
+        <h3>How did you hear about us?</h3>
+        <label class="choice">
+            <input type="radio" name="hear-about" value="search"> Search engine
+        </label>
+        <label class="choice">
+            <input type="radio" name="hear-about" value="word_of_mouth"> Word of mouth
+        </label>
+        <label class="choice">
+            <input type="radio" name="hear-about" value="social_media"> Social Media
+        </label>
+        <label class="choice">
+            <input type="radio" name="hear-about" value="other"> Other
+        </label>
+
+        <h3>Would you like to receive announcements about new CDs and special offers?</h3>
+        <label class="choice">
+            <input type="checkbox" name="like_that" value="yes"> YES, I'd like that.
+        </label>
+        <label class="choice">
+            <input type="checkbox" name="email_announcements" value="yes"> YES, please send me email announcements.
+        </label>
+        
+        <br> <label for="contact-method">Please contact me by:</label>
+        <select id="contact-method" name="contact_method">
+            <option value="email_or_postal">Email or postal mail</option>
+            <option value="email_only">Email only</option>
+            <option value="postal_only">Postal mail only</option>
+        </select>
+        
+        <br> <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>

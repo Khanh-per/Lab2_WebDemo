@@ -1,0 +1,81 @@
+body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            background-color: #ffffff;
+            border: 2px solid #cce0ff; 
+            padding: 25px 40px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        h2, h3 {
+            font-family: 'Times New Roman', Times, serif;
+            color: #008080; /* A teal color similar to the image */
+        }
+
+        h2 {
+            font-size: 2.2em;
+            margin-top: 10px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        
+        /* This table styles the "Your information" section */
+        .info-table {
+            width: 80%;
+        }
+
+        .info-table td {
+            padding: 8px 5px;
+        }
+
+        /* This right-aligns the labels (First Name, Last Name...) */
+        .info-table label {
+            font-weight: bold;
+            display: block;
+            text-align: left;
+            padding: 5px;
+        }
+
+        /* This styles the text input boxes */
+        .info-table input {
+            width: 95%;
+            padding: 8px;
+            border: 1px solid #999;
+        }
+
+        /* Styles for radio buttons and checkboxes */
+        .choice {
+            margin: 10px 0;
+        }
+        
+        .choice input {
+            margin-right: 5px;
+        }
+
+        /* Styles for the dropdown (combo-box) and submit button */
+        select {
+            font-size: 1em;
+            padding: 5px;
+            margin-left: 10px;
+        }
+
+        input[type="submit"] {
+            font-size: 1em;
+            padding: 8px 20px;
+            margin-top: 30px;
+            background-color: #e0e0e0;
+            border: 1px solid #999;
+            cursor: pointer;
+        }
