@@ -1,0 +1,109 @@
+:root{
+    --bg: #f4f6f8;
+    --card: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --accent: #0ea5a4;
+    --shadow: 0 6px 24px rgba(31,41,55,0.08);
+}
+
+*{box-sizing: border-box}
+
+body {
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    -webkit-font-smoothing:antialiased;
+}
+
+.cv-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    max-width: 960px;
+    margin: 36px auto;
+    background: var(--card);
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.cv-header {
+    display:flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.name-block h1{
+    margin: 0 0 4px 0;
+    font-size: 1.6rem;
+}
+.name-block .id{
+    margin:0;
+    font-size:0.85rem;
+    color:var(--muted);
+}
+
+.job-title{
+    margin:0;
+    color:var(--accent);
+    font-weight:600;
+}
+
+hr{border:none;border-top:1px solid #eef2f6;margin:20px 0}
+
+.main-content h2{
+    font-size:0.85rem;
+    color:var(--muted);
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+    margin-bottom:12px;
+}
+
+.summary p{margin:0 0 18px 0;color:var(--muted)}
+
+.job-entry,.edu-entry{margin-bottom:18px}
+.job-entry h3,.edu-entry h3{margin:0;font-size:1.05rem}
+.company-name{font-weight:600;color:var(--text);margin:6px 0}
+.date-location{font-size:0.85rem;color:var(--muted);margin:4px 0}
+
+.sidebar{padding-top:4px}
+.profile-photo{width:100px;height:100px;border-radius:20px;object-fit:cover;display:block;margin:0 auto 14px}
+
+.contact-info h4{margin:0 0 8px 0}
+.contact-list{list-style:none;padding:0;margin:0}
+.contact-list li{margin:10px 0;display:flex;align-items:center;gap:12px}
+.contact-list a{color:var(--text);text-decoration:none}
+
+/* Icon trapezoid style */
+.contact-item .icon{
+    width:44px;height:36px;display:inline-grid;place-items:center;
+    background:#e6e1d6; /* beige background like in attachment */
+    border-radius:2px;
+    clip-path: polygon(0 0, 80% 0, 100% 50%, 80% 100%, 0 100%, 14% 50%);
+    flex: 0 0 44px;
+}
+.contact-item .icon svg{display:block}
+.contact-text{font-size:0.95rem;color:var(--text)}
+
+.icon{
+    width:20px;
+    height:20px;
+    display:block;
+    object-fit:contain;
+    object-position:center;
+}
+    /* Opt-out if the image is already white or should remain unchanged */
+    .icon[data-invert="no"]{filter: none}
+
+.sidebar-section{margin-top:18px}
+.skills-list{list-style:none;padding:0;margin:8px 0 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.skills-list li{background: #f1f5f5;color:var(--text);padding:6px 10px;border-radius:999px;font-size:0.85rem}
+
+@media (max-width:720px){
+    .cv-container{grid-template-columns:1fr;padding:20px}
+    .cv-header{flex-direction:column;align-items:flex-start}
+    .profile-photo{width:88px;height:88px}
+}
